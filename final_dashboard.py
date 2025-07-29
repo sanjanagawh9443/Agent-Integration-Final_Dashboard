@@ -11,8 +11,8 @@ hl = pd.read_csv("healing_log.csv")
 ul = pd.read_csv("uptime_log.csv")
 
 # --- Page Setup ---
-st.set_page_config(layout="wide", page_title="Final BHIV Agent Dashboard")
-st.title("BHIV DevOps + EdTech Simulation Dashboard")
+st.set_page_config(layout="wide", page_title="DevOps + EdTech Agent Dashboard")
+st.title("DevOps + EdTech Agent Dashboard")
 
 # --- Section 1: Patient Health Overview ---
 st.header("1. Patient Health Overview")
