@@ -3,6 +3,21 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import streamlit as st
+
+# Inject light green background
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #e6f4ea; /* Light green */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Load CSVs
 ph = pd.read_csv("patient_health.csv")
 ss = pd.read_csv("student_scores.csv").dropna()
