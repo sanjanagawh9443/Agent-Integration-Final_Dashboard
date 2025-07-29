@@ -5,17 +5,51 @@ import seaborn as sns
 
 import streamlit as st
 
-# Apply light green background to the main container
+# Full dark theme styling
 st.markdown(
     """
     <style>
+    /* Main background and text */
     [data-testid="stAppViewContainer"] {
-        background-color: 	#e6f4ea	;  /* Soft Green */
+        background-color: #1e1e2f;
+        color: white;
+    }
+
+    /* Sidebar background */
+    [data-testid="stSidebar"] {
+        background-color: #2c2f38;
+        color: white;
+    }
+
+    /* Text in widgets */
+    .stTextInput > label,
+    .stNumberInput > label,
+    .stSelectbox > label,
+    .stSlider > label {
+        color: white;
+    }
+
+    /* Table headers and text */
+    .css-1d391kg, .css-1cpxqw2 {
+        color: white;
+    }
+
+    /* Markdown headings */
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+    }
+
+    /* Optional: Chart border and padding */
+    .element-container {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #2a2d37;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Load CSVs
 ph = pd.read_csv("patient_health.csv")
