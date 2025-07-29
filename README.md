@@ -13,6 +13,10 @@ Crafted using Python and Streamlit, the dashboard is clean, interactive, and beg
 
 ---
 
+## Dashboard Preview
+
+![Dashboard Preview](dashboard_preview.png)
+
 ## 💡 What This Project Demonstrates
 
 - 🎯 Intelligent system agents working together on flat-logics (CSV)  
