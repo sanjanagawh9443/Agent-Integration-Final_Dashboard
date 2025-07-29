@@ -5,18 +5,17 @@ import seaborn as sns
 
 import streamlit as st
 
-# Inject light green background
+# Apply light green background to the main container
 st.markdown(
     """
     <style>
-    .main {
-        background-color: #e6f4ea; /* Light green */
+    [data-testid="stAppViewContainer"] {
+        background-color: #e6f4ea;  /* light green */
     }
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 # Load CSVs
 ph = pd.read_csv("patient_health.csv")
