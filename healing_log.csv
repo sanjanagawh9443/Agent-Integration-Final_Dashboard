@@ -1,0 +1,4 @@
+error_type,fix_action,result
+high_latency,adjust_threshold,success
+crash_error,retry_deploy,fail
+memory_spike,retry_deploy,fail
